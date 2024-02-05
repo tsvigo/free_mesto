@@ -2,6 +2,7 @@
 #define DIALOG_H
 
 #include <QDialog>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Dialog; }
@@ -14,8 +15,12 @@ class Dialog : public QDialog
 public:
     Dialog(QWidget *parent = nullptr);
     ~Dialog();
+   
     
 private:
     Ui::Dialog *ui;
+      QTimer *tmr; //Адресная переменная таймера
+    private slots:
+         void updateTime(); //Слот для обновления времени на экране
 };
 #endif // DIALOG_H
