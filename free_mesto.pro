@@ -24,3 +24,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 CONFIG += mobility
 MOBILITY += multimedia
+win32:RC_ICONS += /mnt/247E7EDA7E7EA3E8/книги/загрузки_Яндекс_браузера/how-much-free-space-is-there-on-the-computer-disk-4.ico
